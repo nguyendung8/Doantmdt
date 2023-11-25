@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>MLD Shop - @yield('title')</title>
+	<title>NT Shop - @yield('title')</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/home.css">
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -197,7 +197,7 @@
                 </div> -->
 				<div id="logo" class="col-md-3 col-sm-12 col-xs-12">
 					<a style="text-decoration: none;" href="{{ asset('/') }}">
-					    <img src="img/home/logo2.png" alt="">
+					    <img style="width: 168px !important; padding: 0px !important;"  height="125px" src="img/home/logo.png" alt="">
 					</a>
 				</div>
 
@@ -328,7 +328,7 @@
 				@include('errors.note')
                 <form method="post">
                     @csrf
-                    <h3 class="contact-title">Cảm ơn quý khách đã quan tâm tới MLD Shop! Xin vui lòng hoàn thành biểu mẫu dưới đây</h3>
+                    <h3 class="contact-title">Cảm ơn quý khách đã quan tâm tới NT Shop! Xin vui lòng hoàn thành biểu mẫu dưới đây</h3>
 					<i class="fa fa-times close-btn close-contact" aria-hidden="true"></i>
                     <label for="">Họ và tên</label>
                     <div>
@@ -356,18 +356,18 @@
                     <div class="row">
                         <div id="logo" class="col-md-3 col-sm-12 col-xs-12">
 							<a style="text-decoration: none;" href="{{ asset('/') }}">
-                                <img src="img/home/logo2.png" alt="">
+                                <img style="width: 200px !important; padding: 0px !important;"  height="130px" src="img/home/logo.png" alt="">
                             </a>
                         </div>
                         <div id="about" class="col-md-3 col-sm-12 col-xs-12">
                             <h3>About us</h3>
-                            <p class="text-justify">MLDShop thành lập năm 2022. Chúng tôi là nhà cung cấp các sản phẩm công nghệ hàng đầu Việt Nam cũng như trên toàn thế giới.</p>
+                            <p class="text-justify">NTShop thành lập năm 2023. Chúng tôi là nhà cung cấp các sản phẩm công nghệ hàng đầu Việt Nam cũng như trên toàn thế giới.</p>
                         </div>
                         <div id="hotline" class="col-md-3 col-sm-12 col-xs-12">
                             <h3>Hotline</h3>
                             <p>Phone1: (+84) 523629227</p>
                             <p>Phone2: (+84) 983532154</p>
-                            <p>Email: dungli1221@gmail.com</p>
+                            <p>Email: toannguyen@gmail.com</p>
                         </div>
                         <div id="contact" class="col-md-3 col-sm-12 col-xs-12">
                             <h3>Contact Us</h3>
