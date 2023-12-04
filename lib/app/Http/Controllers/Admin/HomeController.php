@@ -12,6 +12,7 @@ use App\Models\VpProduct;
 use App\Models\VpUser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -23,7 +24,17 @@ class HomeController extends Controller
         $category_cnt = count( VpCategory::all());
         $question_cnt = count( VpCustomerCare::all());
         $order_cnt = count( VpOrder::all());
-        return view('backend.index', compact('product_cnt', 'comment_cnt', 'user_cnt', 'category_cnt', 'question_cnt', 'order_cnt'));
+
+        $revenue = VpOrder::select(
+            DB::raw('MONTH(placed_order_date) as month'),
+            DB::raw('YEAR(placed_order_date) as year'),
+            DB::raw('SUM(total_price) as total_revenue')
+        )
+        ->groupBy(DB::raw('YEAR(placed_order_date)'), DB::raw('MONTH(placed_order_date)'))
+        ->orderByDesc('year')
+        ->orderByDesc('month')
+        ->get();
+        return view('backend.index', compact('product_cnt', 'comment_cnt', 'user_cnt', 'category_cnt', 'question_cnt', 'order_cnt', 'revenue'));
     }
     public function getLogout()
     {

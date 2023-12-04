@@ -145,9 +145,5 @@ Route::group(['namespace' => 'Admin'], function () {
             Route::get('/confirm-comment/{id}', [CommentController::class, 'confirmComment']);
         });
 
-        //revenue
-        Route::group(['prefix' => 'revenue'], function (){
-            Route::get('/', [RevenueController::class, 'getRevenue']);
-        });
     });
 });
