@@ -11,10 +11,29 @@
     }
     table {
         border-radius: 4px;
+        position: relative;
     }
     th, td {
         padding: 6px 38px;
         text-align: center;
+    }
+    .view_reveune {
+        background: #337ab7;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 3px 10px;
+        margin-bottom: 15px;
+		cursor: pointer;
+    }
+    .close-btn {
+        position: absolute;
+        right: 8px;
+        top: 2px;
+		cursor: pointer;
+    }
+    .remove {
+        display: none;
     }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -106,19 +125,20 @@
 			</div>
 		</div><!--/.row-->
         <div class="row">
-			<div class="col-xs-12 col-md-5 col-lg-6">
+			<div class="col-xs-12 col-md-5 col-lg-8">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         Thống kê doanh thu
                     </div>
                     <div style="font-size: 25px" class="panel-body">
-                        {{-- {{ number_format($revenue->total_price,0,',','.')}}.000.000 VND --}}
-                         <table border="1">
+                        <p>Doanh thu tháng hiện tại: {{ number_format($revenue_current->total_revenue_current ,0,',','.')}}.000.000 VND</p>
+                        <button class="view_reveune">Xem doanh thu các tháng còn lại</button>
+                         <table class="table remove" border="1">
                             <thead>
                                 <tr>
                                     <th>Năm</th>
                                     <th>Tháng</th>
-                                    <th>Tổng doanh thu</th>
+                                    <th>Tổng doanh thu <i class="fa fa-times close-btn" aria-hidden="true"></i></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -136,4 +156,17 @@
 			</div>
 		</div>
 	</div>
+
+    <script>
+        let open = document.querySelector('.view_reveune');
+        let table = document.querySelector('.table');
+        let close = document.querySelector('.close-btn');
+
+        open.addEventListener('click', function() {
+            table.classList.remove('remove');
+        });
+        close.addEventListener('click', function() {
+            table.classList.add('remove');
+        });
+    </script>
 @stop
