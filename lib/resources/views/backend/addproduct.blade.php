@@ -31,6 +31,10 @@
 										<label>Ảnh sản phẩm</label>
 										<input required id="img" type="file" name="img" class="form-control" >
 									</div>
+                                    <div class="form-group" >
+										<label>Số lượng</label>
+										<input required type="number" name="quantity" class="form-control">
+									</div>
 									<div class="form-group" >
 										<label>Phụ kiện</label>
 										<input required type="text" name="accessories" class="form-control">

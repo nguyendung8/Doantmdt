@@ -32,6 +32,10 @@
 										<input id="img" type="file" name="img" class="form-control" onchange="changeImg(this)">
 					                    <img id="avatar" width="300px" src="{{ asset('lib/storage/app/avatar/'.$product->prod_img) }}">
 									</div>
+                                    <div class="form-group" >
+										<label>Số lượng</label>
+										<input required type="number" name="quantity" class="form-control" value="{{ $product->prod_quantity }}">
+									</div>
 									<div class="form-group" >
 										<label>Phụ kiện</label>
 										<input required type="text" name="accessories" class="form-control" value="{{ $product->prod_accessories}}">

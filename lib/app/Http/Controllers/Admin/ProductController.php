@@ -35,6 +35,8 @@ class ProductController extends Controller
         $product->prod_img = $filename;
         $product->prod_accessories = $request->accessories;
         $product->prod_price = $request->price;
+        $product->prod_quantity = $request->quantity;
+        $product->prod_initial_quantity = $request->quantity;
         $product->prod_warranty = $request->warranty;
         $product->prod_condition = $request->condition;
         $product->prod_status = $request->status;
@@ -62,6 +64,8 @@ class ProductController extends Controller
         $product->prod_slug = Str::slug($request->product_name);
         $product->prod_accessories = $request->accessories;
         $product->prod_price = $request->price;
+        $product->prod_quantity = $request->quantity;
+        $product->prod_initial_quantity = $request->quantity;
         $product->prod_warranty = $request->warranty;
         $product->prod_condition = $request->condition;
         $product->prod_status = $request->status;

@@ -15,8 +15,8 @@ class FrontendController extends Controller
 {
     public function getHome()
     {
-        $product_featured = VpProduct::where('prod_featured',1)->orderBy('prod_id', 'asc')->paginate(3);
-        $product_new = VpProduct::orderBy('prod_id', 'desc')->take(3)->get();
+        $product_featured = VpProduct::where('prod_featured',1)->where('prod_quantity', '>', 0)->orderBy('prod_id', 'asc')->paginate(3);
+        $product_new = VpProduct::where('prod_quantity' , '>',  0)->orderBy('prod_id', 'desc')->take(3)->get();
         return view('frontend.home', compact('product_featured', 'product_new'));
     }
     public function getDetail($id)

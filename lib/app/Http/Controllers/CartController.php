@@ -14,6 +14,7 @@ class CartController extends Controller
     public function getAddCart($id)
     {
         $product = VpProduct::find($id);
+        $product_quantity = $product->prod_quantity;
         Cart::add(['id' => $id, 'name' => $product->prod_name, 'qty' => 1,
                     'price' => $product->prod_price, 'weight' => 550, 'options' => ['img' => $product->prod_img]]);
 
@@ -52,7 +53,7 @@ class CartController extends Controller
         $order->phone = $request->phone;
         $order->total_price = Cart::total();
         $order->total_products = Cart::content()->pluck('name')->implode('; ');
-        $order->placed_order_date = now()->format('d/m/Y');
+        $order->placed_order_date = now()->format('Y-m-d');
         $order->user_id = Auth::id();
         $order->save();
 
