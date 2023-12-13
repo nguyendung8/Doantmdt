@@ -251,22 +251,22 @@
 
 					<div id="banner-l" class="text-center">
 						<div class="banner-l-item">
-							<a href="{{ asset('/') }}"><img src="img/home/banner-l-1.png" alt="" class="img-thumbnail"></a>
+							<a href="{{ asset('/') }}"><img src="img/home/thumbnail1.jpg" alt="" class="img-thumbnail"></a>
 						</div>
 						<div class="banner-l-item">
-							<a href="{{ asset('/') }}"><img src="img/home/banner-l-2.png" alt="" class="img-thumbnail"></a>
+							<a href="{{ asset('/') }}"><img src="img/home/thumbnail2.jpg" alt="" class="img-thumbnail"></a>
 						</div>
 						<div class="banner-l-item">
-							<a href="{{ asset('/') }}"><img src="img/home/banner-l-3.png" alt="" class="img-thumbnail"></a>
+							<a href="{{ asset('/') }}"><img src="img/home/thumbnail3.jpg" alt="" class="img-thumbnail"></a>
 						</div>
 						<div class="banner-l-item">
-							<a href="{{ asset('/') }}"><img src="img/home/banner-l-4.png" alt="" class="img-thumbnail"></a>
+							<a href="{{ asset('/') }}"><img src="img/home/thumbnail4.jpg" alt="" class="img-thumbnail"></a>
 						</div>
 						<div class="banner-l-item">
-							<a href="{{ asset('/') }}"><img src="img/home/banner-l-5.png" alt="" class="img-thumbnail"></a>
+							<a href="{{ asset('/') }}"><img src="img/home/thumbnail5.jpg" alt="" class="img-thumbnail"></a>
 						</div>
 						<div class="banner-l-item">
-							<a href="{{ asset('/') }}"><img src="img/home/banner-l-6.png" alt="" class="img-thumbnail"></a>
+							<a href="{{ asset('/') }}"><img src="img/home/thumbnail6.jpg" alt="" class="img-thumbnail"></a>
 						</div>
 						{{-- <div class="banner-l-item">
 							<a href="#"><img src="img/home/banner-l-7.png" alt="" class="img-thumbnail"></a>
@@ -289,13 +289,13 @@
 							<!-- The slideshow -->
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<img src="img/home/slide-1.png" alt="Los Angeles" >
+									<img width="800px" height="527px" src="img/home/slider1.jpg" alt="Los Angeles" >
 								</div>
 								<div class="carousel-item">
-									<img src="img/home/slide-2.png" alt="Chicago">
+									<img width="800px" height="527px" src="img/home/slider2.jpg" alt="Chicago">
 								</div>
 								<div class="carousel-item">
-									<img src="img/home/slide-3.png" alt="New York" >
+									<img width="800px" height="527px" src="img/home/slider3.jpg" alt="New York" >
 								</div>
 							</div>
 
@@ -312,10 +312,10 @@
 					<div id="banner-t" class="text-center">
 						<div class="row">
 							<div class="banner-t-item col-md-6 col-sm-12 col-xs-12">
-								<a href="{{ asset('/') }}"><img src="img/home/banner-t-1.png" alt="" class="img-thumbnail"></a>
+								<a href="{{ asset('/') }}"><img style="height: 223px !important;" width="398px" src="img/home/banner1.jpg" alt="" class="img-thumbnail"></a>
 							</div>
 							<div class="banner-t-item col-md-6 col-sm-12 col-xs-12">
-								<a href="{{ asset('/') }}"><img src="img/home/banner-t-1.png" alt="" class="img-thumbnail"></a>
+								<a href="{{ asset('/') }}"><img style="height: 223px !important;" src="img/home/banner2.jpg" alt="" class="img-thumbnail"></a>
 							</div>
 						</div>
 					</div>
@@ -365,13 +365,13 @@
                         </div>
                         <div id="about" class="col-md-3 col-sm-12 col-xs-12">
                             <h3>About us</h3>
-                            <p class="text-justify">NTShop thành lập năm 2023. Chúng tôi là nhà cung cấp các sản phẩm công nghệ hàng đầu Việt Nam cũng như trên toàn thế giới.</p>
+                            <p class="text-justify">Alice Tarot thành lập năm 2023. Chúng tôi là nhà cung cấp các sản phẩm công nghệ hàng đầu Việt Nam cũng như trên toàn thế giới.</p>
                         </div>
                         <div id="hotline" class="col-md-3 col-sm-12 col-xs-12">
                             <h3>Hotline</h3>
                             <p>Phone1: (+84) 523629227</p>
                             <p>Phone2: (+84) 983532154</p>
-                            <p>Email: toannguyen@gmail.com</p>
+                            <p>Email: alicetarot@gmail.com</p>
                         </div>
                         <div id="contact" class="col-md-3 col-sm-12 col-xs-12">
                             <h3>Contact Us</h3>
