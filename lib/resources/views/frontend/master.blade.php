@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>NT Shop - @yield('title')</title>
+	<title>Alice Tarot - @yield('title')</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/home.css">
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -184,6 +184,10 @@
                 border-radius: 5px;
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             }
+            #header,
+            #footer-t {
+                background: #a0b89a !important;
+            }
         </style>
 </head>
 <body>
@@ -197,7 +201,7 @@
                 </div> -->
 				<div id="logo" class="col-md-3 col-sm-12 col-xs-12">
 					<a style="text-decoration: none;" href="{{ asset('/') }}">
-					    <img style="width: 168px !important; padding: 0px !important;"  height="125px" src="img/home/logo.png" alt="">
+					    <img style="width: 102px !important; padding: 0px !important; margin-top: 17px;"  height="80px" src="img/home/logo_tarot.png" alt="">
 					</a>
 				</div>
 
@@ -328,7 +332,7 @@
 				@include('errors.note')
                 <form method="post">
                     @csrf
-                    <h3 class="contact-title">Cảm ơn quý khách đã quan tâm tới NT Shop! Xin vui lòng hoàn thành biểu mẫu dưới đây</h3>
+                    <h3 class="contact-title">Cảm ơn quý khách đã quan tâm tới Alice Tarot! Xin vui lòng hoàn thành biểu mẫu dưới đây</h3>
 					<i class="fa fa-times close-btn close-contact" aria-hidden="true"></i>
                     <label for="">Họ và tên</label>
                     <div>
@@ -356,7 +360,7 @@
                     <div class="row">
                         <div id="logo" class="col-md-3 col-sm-12 col-xs-12">
 							<a style="text-decoration: none;" href="{{ asset('/') }}">
-                                <img style="width: 200px !important; padding: 0px !important;"  height="130px" src="img/home/logo.png" alt="">
+                                <img style="width: 140px !important; padding: 0px !important;"  height="110px" src="img/home/logo_tarot.png" alt="">
                             </a>
                         </div>
                         <div id="about" class="col-md-3 col-sm-12 col-xs-12">
