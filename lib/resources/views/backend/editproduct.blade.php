@@ -33,20 +33,16 @@
 					                    <img id="avatar" width="300px" src="{{ asset('lib/storage/app/avatar/'.$product->prod_img) }}">
 									</div>
                                     <div class="form-group" >
+                                        <label>Tác giả</label>
+                                        <input required type="text" name="author" class="form-control" value="{{ $product->prod_author }}">
+                                    </div>
+                                    <div class="form-group" >
+                                        <label>Nhà xuất bản</label>
+                                        <input required type="text" name="publisher" class="form-control" value="{{ $product->prod_publisher }}">
+                                    </div>
+                                    <div class="form-group" >
 										<label>Số lượng</label>
 										<input required type="number" name="quantity" class="form-control" value="{{ $product->prod_quantity }}">
-									</div>
-									<div class="form-group" >
-										<label>Phụ kiện</label>
-										<input required type="text" name="accessories" class="form-control" value="{{ $product->prod_accessories}}">
-									</div>
-									<div class="form-group" >
-										<label>Bảo hành</label>
-										<input required type="text" name="warranty" class="form-control" value="{{ $product->prod_warranty}}">
-									</div>
-									<div class="form-group" >
-										<label>Tình trạng</label>
-										<input required type="text" name="condition" class="form-control" value="{{ $product->prod_condition}}">
 									</div>
 									<div class="form-group" >
 										<label>Trạng thái</label>

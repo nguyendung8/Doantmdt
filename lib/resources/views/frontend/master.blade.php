@@ -289,13 +289,13 @@
 							<!-- The slideshow -->
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<img width="800px" height="527px" src="img/home/slider1.jpg" alt="Los Angeles" >
+									<img width="800px" height="500px" src="img/home/slider1.jpg" alt="Los Angeles" >
 								</div>
 								<div class="carousel-item">
-									<img width="800px" height="527px" src="img/home/slider2.jpg" alt="Chicago">
+									<img width="800px" height="500px" src="img/home/slider2.jpg" alt="Chicago">
 								</div>
 								<div class="carousel-item">
-									<img width="800px" height="527px" src="img/home/slider3.jpg" alt="New York" >
+									<img width="800px" height="500px" src="img/home/slider3.jpg" alt="New York" >
 								</div>
 							</div>
 
@@ -365,18 +365,18 @@
                         </div>
                         <div id="about" class="col-md-3 col-sm-12 col-xs-12">
                             <h3>About us</h3>
-                            <p class="text-justify">Alice Tarot thành lập năm 2023. Chúng tôi là nhà cung cấp các sản phẩm công nghệ hàng đầu Việt Nam cũng như trên toàn thế giới.</p>
+                            <p class="text-justify">Alice Tarot thành lập năm 2023. Chúng tôi là nhà cung cấp các sản phẩm về bài Tarot hàng đầu Việt Nam cũng như trên toàn thế giới.</p>
                         </div>
                         <div id="hotline" class="col-md-3 col-sm-12 col-xs-12">
                             <h3>Hotline</h3>
-                            <p>Phone1: (+84) 523629227</p>
-                            <p>Phone2: (+84) 983532154</p>
+                            <p>Phone1: (+84) 951532667</p>
+                            <p>Phone2: (+84) 913663732</p>
                             <p>Email: alicetarot@gmail.com</p>
                         </div>
                         <div id="contact" class="col-md-3 col-sm-12 col-xs-12">
                             <h3>Contact Us</h3>
-                            <p>Address 1: Số 51/42 - Ngõ 85 Hạ Đình - Thanh Xuân - Hà Nội</p>
-                            <p>Address 2: Số 24 Lương Ngọc Quyến - Hàng Buồm - Hoàn Kiếm - Hà Nội</p>
+                            <p>Address 1: Số 53 - Ngõ 10 Hạ Đình - Thanh Xuân - Hà Nội</p>
+                            <p>Address 2: Số 12 Lương Ngọc Quyến - Hàng Buồm - Hoàn Kiếm - Hà Nội</p>
                         </div>
                     </div>
                 </div>

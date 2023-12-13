@@ -39,7 +39,7 @@ class OrderController extends Controller
 
             $message->to($email, $name);
 
-            $message->subject('Thông báo đơn hàng của bạn đã được xác nhận tại NTShop');
+            $message->subject('Thông báo đơn hàng của bạn đã được xác nhận tại  Alice Tarot');
 
         });
         return redirect()->intended('admin/order');
@@ -59,7 +59,7 @@ class OrderController extends Controller
 
             $message->to($email, $name);
 
-            $message->subject('Thông báo đơn hàng của bạn đang được vận chuyển từ NTShop');
+            $message->subject('Thông báo đơn hàng của bạn đang được vận chuyển từ  Alice Tarot');
 
         });
         return redirect()->intended('admin/order');

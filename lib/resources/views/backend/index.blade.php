@@ -124,37 +124,6 @@
 				</div>
 			</div>
 		</div><!--/.row-->
-        <div class="row">
-			<div class="col-xs-12 col-md-5 col-lg-8">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        Thống kê doanh thu
-                    </div>
-                    <div style="font-size: 25px" class="panel-body">
-                        <p>Doanh thu tháng hiện tại: {{ number_format($revenue_current->total_revenue_current ,0,',','.')}}.000.000 VND</p>
-                        <button class="view_reveune">Xem doanh thu các tháng còn lại</button>
-                         <table class="table remove" border="1">
-                            <thead>
-                                <tr>
-                                    <th>Năm</th>
-                                    <th>Tháng</th>
-                                    <th>Tổng doanh thu <i class="fa fa-times close-btn" aria-hidden="true"></i></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($revenue as $row)
-                                    <tr>
-                                        <td>{{ $row->year }}</td>
-                                        <td>{{ $row->month }}</td>
-                                        <td>{{number_format($row->total_revenue ,0,',','.')}}.000.000 VND </td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-			</div>
-		</div>
 	</div>
 
     <script>
